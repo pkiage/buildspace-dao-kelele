@@ -10,7 +10,7 @@ https://metamask.io/
 Rinkeby Faucet:
 https://faucets.chain.link/rinkeby
 
-## NFT & Token
+## NFT & Token:
 NFT: https://testnets.opensea.io/assets/0xa02c719bb0319eb4146f4f234867df0f89b798a8/0
 
 Token: https://rinkeby.etherscan.io/token/0x2A25BE5Ed1bD30344bAE5749066d36c111a5c930
