@@ -1,8 +1,10 @@
 import sdk from "./1-initialize-sdk.js";
 import { readFileSync } from "fs";
+import { BUNDLE_DROP_MODULE_ADDRESS } from '../constants';
+
 
 const bundleDrop = sdk.getBundleDropModule(
-  "0x65ceAdfccCE0D13f975d8B0481ea050Df2A5c6BC",
+  BUNDLE_DROP_MODULE_ADDRESS,
 );
 
 

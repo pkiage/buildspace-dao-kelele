@@ -1,9 +1,10 @@
 import { ethers } from "ethers";
 import sdk from "./1-initialize-sdk.js";
+import { TOKEN_MODULE_ADDRESS } from '../constants';
 
 // This is the address of our ERC-20 contract printed out in the step before.
 const tokenModule = sdk.getTokenModule(
-  "0x2A25BE5Ed1bD30344bAE5749066d36c111a5c930",
+  TOKEN_MODULE_ADDRESS,
 );
 
 (async () => {

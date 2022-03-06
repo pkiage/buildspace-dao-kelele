@@ -1,8 +1,10 @@
 import sdk from "./1-initialize-sdk.js";
+import { APP_MODULE_ADDRESS ,TOKEN_MODULE_ADDRESS} from '../constants';
+
 
 // Grab the app module address.
 const appModule = sdk.getAppModule(
-  "0x0b48CCfD9007e17F894aa51837cD0f76dCD22716",
+  APP_MODULE_ADDRESS,
 );
 
 (async () => {
@@ -12,7 +14,7 @@ const appModule = sdk.getAppModule(
       name: "KeleleDAO's Epic Proposals",
 
       // This is the location of our governance token, our ERC-20 contract!
-      votingTokenAddress: "0x2A25BE5Ed1bD30344bAE5749066d36c111a5c930",
+      votingTokenAddress: TOKEN_MODULE_ADDRESS,
 
       // After a proposal is created, when can members start voting?
       // For now, we set this to immediately.
@@ -32,7 +34,7 @@ const appModule = sdk.getAppModule(
     });
 
     console.log(
-      "✅ Successfully deployed vote module, address:", //0x9C4B37CDE475fDd1B40416aA14E0939bA17d24b1
+      "✅ Successfully deployed vote module, address:", //VOTING_MODULE_ADDRESS
       voteModule.address,
     );
   } catch (err) {

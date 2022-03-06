@@ -4,19 +4,21 @@ import { useWeb3 } from "@3rdweb/hooks";
 import { ThirdwebSDK } from "@3rdweb/sdk";
 
 import { ethers } from "ethers";
+import { BUNDLE_DROP_MODULE_ADDRESS,TOKEN_MODULE_ADDRESS,VOTING_MODULE_ADDRESS} from '../constants';
+
 
 const sdk = new ThirdwebSDK("rinkeby");
 
 const bundleDropModule = sdk.getBundleDropModule(
-  "0x65ceAdfccCE0D13f975d8B0481ea050Df2A5c6BC",
+  BUNDLE_DROP_MODULE_ADDRESS,
 );
 
 const tokenModule = sdk.getTokenModule(
-  "0x2A25BE5Ed1bD30344bAE5749066d36c111a5c930"
+  TOKEN_MODULE_ADDRESS
 );
 
 const voteModule = sdk.getVoteModule(
-  "0x9C4B37CDE475fDd1B40416aA14E0939bA17d24b1",
+  VOTING_MODULE_ADDRESS,
 );
 
 
@@ -352,7 +354,7 @@ const App = () => {
   // Render mint nft screen.
   return (
     <div className="mint-nft">
-      <h1>Mint your free 🍪DAO Membership NFT</h1>
+      <h1>Mint your free 💎 DAO Membership NFT</h1>
       <button
         disabled={isClaiming}
         onClick={() => {

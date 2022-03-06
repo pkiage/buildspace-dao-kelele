@@ -1,7 +1,9 @@
 import sdk from "./1-initialize-sdk.js";
+import { APP_MODULE_ADDRESS } from '../constants';
+
 
 // In order to deploy the new contract we need our old friend the app module again.
-const app = sdk.getAppModule("0x0b48CCfD9007e17F894aa51837cD0f76dCD22716");
+const app = sdk.getAppModule(APP_MODULE_ADDRESS);
 
 (async () => {
   try {
@@ -13,7 +15,7 @@ const app = sdk.getAppModule("0x0b48CCfD9007e17F894aa51837cD0f76dCD22716");
       symbol: "KELELE",
     });
     console.log(
-      "✅ Successfully deployed token module, address:", //0x2A25BE5Ed1bD30344bAE5749066d36c111a5c930
+      "✅ Successfully deployed token module, address:", //TOKEN_MODULE_ADDRESS
       tokenModule.address,
     );
   } catch (error) {

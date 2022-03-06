@@ -1,8 +1,9 @@
 import { ethers } from "ethers";
 import sdk from "./1-initialize-sdk.js";
 import { readFileSync } from "fs";
+import { APP_MODULE_ADDRESS } from '../constants';
 
-const app = sdk.getAppModule("0x0b48CCfD9007e17F894aa51837cD0f76dCD22716");
+const app = sdk.getAppModule(APP_MODULE_ADDRESS);
 
 (async () => {
   try {
@@ -20,7 +21,7 @@ const app = sdk.getAppModule("0x0b48CCfD9007e17F894aa51837cD0f76dCD22716");
     });
     
     console.log(
-      "✅ Successfully deployed bundleDrop module, address:", // 0x65ceAdfccCE0D13f975d8B0481ea050Df2A5c6BC
+      "✅ Successfully deployed bundleDrop module, address:", // BUNDLE_DROP_MODULE_ADDRESS
       bundleDropModule.address,
     );
     console.log(

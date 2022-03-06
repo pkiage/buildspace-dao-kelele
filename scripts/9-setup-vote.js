@@ -1,14 +1,15 @@
 import { ethers } from "ethers";
 import sdk from "./1-initialize-sdk.js";
+import {VOTING_MODULE_ADDRESS, TOKEN_MODULE_ADDRESS} from '../constants';
 
 // This is our governance contract.
 const voteModule = sdk.getVoteModule(
-  "0x9C4B37CDE475fDd1B40416aA14E0939bA17d24b1",
+  VOTING_MODULE_ADDRESS,
 );
 
 // This is our ERC-20 contract.
 const tokenModule = sdk.getTokenModule(
-  "0x2A25BE5Ed1bD30344bAE5749066d36c111a5c930",
+  TOKEN_MODULE_ADDRESS,
 );
 
 (async () => {
