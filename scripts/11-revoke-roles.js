@@ -1,5 +1,5 @@
 import sdk from "./1-initialize-sdk.js";
-import {TOKEN_MODULE_ADDRESS} from '../constants';
+import {TOKEN_MODULE_ADDRESS} from '../src/constants';
 
 
 const tokenModule = sdk.getTokenModule(

@@ -1,6 +1,6 @@
 import { ethers } from "ethers";
 import sdk from "./1-initialize-sdk.js";
-import { VOTING_MODULE_ADDRESS ,TOKEN_MODULE_ADDRESS} from '../constants';
+import { VOTING_MODULE_ADDRESS ,TOKEN_MODULE_ADDRESS} from '../src/constants';
 
 
 // Our voting contract.

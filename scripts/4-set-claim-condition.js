@@ -1,5 +1,5 @@
 import sdk from "./1-initialize-sdk.js";
-import { BUNDLE_DROP_MODULE_ADDRESS } from '../constants';
+import { BUNDLE_DROP_MODULE_ADDRESS } from '../src/constants';
 
 
 const bundleDrop = sdk.getBundleDropModule(

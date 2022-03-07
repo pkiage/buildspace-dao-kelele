@@ -1,7 +1,7 @@
 import { ethers } from "ethers";
 import sdk from "./1-initialize-sdk.js";
 import { readFileSync } from "fs";
-import { APP_MODULE_ADDRESS } from '../constants';
+import { APP_MODULE_ADDRESS } from '../src/constants';
 
 const app = sdk.getAppModule(APP_MODULE_ADDRESS);
 

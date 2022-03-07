@@ -4,7 +4,7 @@ import { useWeb3 } from "@3rdweb/hooks";
 import { ThirdwebSDK } from "@3rdweb/sdk";
 
 import { ethers } from "ethers";
-import { BUNDLE_DROP_MODULE_ADDRESS,TOKEN_MODULE_ADDRESS,VOTING_MODULE_ADDRESS} from '../constants';
+import { BUNDLE_DROP_MODULE_ADDRESS,TOKEN_MODULE_ADDRESS,VOTING_MODULE_ADDRESS} from './constants';
 
 
 const sdk = new ThirdwebSDK("rinkeby");

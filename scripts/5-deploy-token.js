@@ -1,5 +1,5 @@
 import sdk from "./1-initialize-sdk.js";
-import { APP_MODULE_ADDRESS } from '../constants';
+import { APP_MODULE_ADDRESS } from '../src/constants';
 
 
 // In order to deploy the new contract we need our old friend the app module again.

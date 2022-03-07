@@ -1,5 +1,5 @@
 import sdk from "./1-initialize-sdk.js";
-import { APP_MODULE_ADDRESS ,TOKEN_MODULE_ADDRESS} from '../constants';
+import { APP_MODULE_ADDRESS ,TOKEN_MODULE_ADDRESS} from '../src/constants';
 
 
 // Grab the app module address.
